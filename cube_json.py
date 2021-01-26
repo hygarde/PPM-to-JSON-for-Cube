@@ -22,7 +22,7 @@ data = {}
 data['Structure'] = []
 
 id = 0
-average_orientation = [0,0,0]
+
 for z in range(x_dimension):
     for x in range(z_dimension):
         for y in range(y_dimension):
@@ -102,11 +102,6 @@ for z in range(x_dimension):
             else:
                 orientation = (1,0,0)
                 rotation = 0
-            
-            average_orientation[0]+=orientation[0]
-            average_orientation[1]+=orientation[1]
-            average_orientation[2]+=orientation[2]
-
             data['Structure'].append({
                 'id' : id,
                 'Position' : (x,z,y),
